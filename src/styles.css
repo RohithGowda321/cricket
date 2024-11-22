@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    perspective: 1200px;
+  }
+  
+  .card {
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    transition: transform 1.3s ease;
+  }
+  
+  .card-2 {
+    width: 800px;
+    height: 1200px;
+    transform: translateY(-25%) rotateY(0);
+    position: absolute;
+  }
+  
+  .cards-container:hover .card-2 {
+    transform: translateY(125%) rotateY(0);
+  }
+  
+  .live-feed {
+    position: absolute;
+    transform: scale(1.5);
+  }
+  
